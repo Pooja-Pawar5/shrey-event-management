@@ -343,3 +343,29 @@ if (payBtn) {
         }
     });
 }
+const loginForm = document.getElementById("loginForm");
+
+loginForm.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const message = document.getElementById("loginMessage");
+
+    if (email === "admin@gmail.com" && password === "123456") {
+
+        message.textContent = "Login successful!";
+        message.style.color = "green";
+
+        setTimeout(function () {
+            window.location.href = "index.html";
+        }, 1000);
+
+    } else {
+
+        message.textContent = "Invalid email or password.";
+        message.style.color = "red";
+
+    }
+});

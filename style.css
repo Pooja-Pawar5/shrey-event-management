@@ -1041,4 +1041,102 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    background: var(--white);
+}
+
+.gallery-container {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why-choose-us {
+    background: var(--white);
+}
+
+.why-container {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.why-card {
+    background: var(--cream);
+    padding: 35px 22px;
+    text-align: center;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.why-icon {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.why-card h3 {
+    color: var(--dark);
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.why-card p {
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .why-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .why-container {
+        grid-template-columns: 1fr;
+    }
+}
 

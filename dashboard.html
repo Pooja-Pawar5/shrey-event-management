@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Shrey Event Management</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <header class="dashboard-header">
+
+        <div class="logo">
+            <img src="images/shrey-logo.jpeg" alt="Shrey Event Management">
+        </div>
+
+        <button id="logoutBtn">Logout</button>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="welcome">
+            <p>WELCOME BACK</p>
+            <h1>Hello, <span id="userName">User</span> 👋</h1>
+            <p>Manage your events and bookings from your dashboard.</p>
+        </div>
+
+        <div class="dashboard-cards">
+
+            <div class="dashboard-card">
+                <div class="card-icon">📅</div>
+                <h3>Book an Event</h3>
+                <p>Plan and book your special event with us.</p>
+                <a href="index.html#booking">Book Now</a>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-icon">🎉</div>
+                <h3>My Bookings</h3>
+                <p>View your event booking details.</p>
+                <button class="coming-soon">View Bookings</button>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-icon">💰</div>
+                <h3>Packages</h3>
+                <p>Explore our event packages and services.</p>
+                <a href="index.html#packages">View Packages</a>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-icon">👤</div>
+                <h3>My Profile</h3>
+                <p>View your registered account details.</p>
+                <button id="profileBtn">View Profile</button>
+            </div>
+
+        </div>
+
+        <div class="profile-box" id="profileBox">
+
+            <h2>My Profile</h2>
+
+            <p>
+                <strong>Name:</strong>
+                <span id="profileName"></span>
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <span id="profileEmail"></span>
+            </p>
+
+            <p>
+                <strong>Mobile:</strong>
+                <span id="profileMobile"></span>
+            </p>
+
+        </div>
+
+    </main>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
+
